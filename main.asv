@@ -1,0 +1,7 @@
+clc
+close all
+clear
+
+%% Problem 4.1 
+% a
+open()
