@@ -41,9 +41,7 @@ end
 % b
 figure()
 X_fft = fft(x(1:100));
-freq = 1/t(1:100);
-
-
+freq = 1/t(1:100)
 % N = length(x(1:100));
 % xdft = fft(x(1:100));
 % xdft = xdft(1:N/2+1);
