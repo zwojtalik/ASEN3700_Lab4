@@ -3,7 +3,7 @@ close all
 clear
 
 %% Printing figures
-printfigs = 0; % Set to 1 for saving/printing figures
+printfigs = 1; % Set to 1 for saving/printing figures
 
 %% Getting variables
 load("lab04_analysis_signal1.mat");
