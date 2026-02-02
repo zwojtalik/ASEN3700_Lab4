@@ -101,25 +101,11 @@ end
 load("lab04_analysis_signal2.mat");
 % d1
 figure()
-plot(t(1:100), x(1:100))
+plot(t, x)
 xlabel('Time (s)')
 ylabel('X values')
 title('4.1.d1: X Vals. vs. Time (s)')
 grid on
-
-if printfigs == 1
-    print('-dpng', '-r300')
-end
-
-% d2
-[freq,psdx] = fft_func(Fs, t(1:100), x(1:100));
-
-figure()
-plot(freq, 10*log10(psdx))
-grid on
-title('4.1.d2: Periodogram Using FFT')
-xlabel('Frequency (Hz)')
-ylabel('Power/Frequency dB(Vrms^2/Hz)')
 
 if printfigs == 1
     print('-dpng', '-r300')
@@ -143,25 +129,11 @@ end
 load("lab04_analysis_signal3.mat");
 % e1
 figure()
-plot(t(1:100), x(1:100))
+plot(t, x)
 xlabel('Time (s)')
 ylabel('X values')
 title('4.1.e1: X Vals. vs. Time (s)')
 grid on
-
-if printfigs == 1
-    print('-dpng', '-r300')
-end
-
-% e2
-[freq,psdx] = fft_func(Fs, t(1:100), x(1:100));
-
-figure()
-plot(freq, 10*log10(psdx))
-grid on
-title('4.1.e2: Periodogram Using FFT')
-xlabel('Frequency (Hz)')
-ylabel('Power/Frequency dB(Vrms^2/Hz)')
 
 if printfigs == 1
     print('-dpng', '-r300')
